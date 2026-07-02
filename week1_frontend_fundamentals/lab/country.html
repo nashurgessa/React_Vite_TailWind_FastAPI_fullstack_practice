@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>List of Country</title>
+        <!-- <link rel="stylesheet" href="styles.css"> -->
+
+        <script>
+
+             function fetchCountries() {
+                 fetch('https://restcountries.com/v3.1/independent?status=true')
+                .then(response => response.json())
+                .then(data => {
+                    console.log(`Incoming data : ${data}`);
+                    var select = document.getElementById("country");
+                    for (var i = 0; i < data.length; i++) {
+                        console.log(`Country: ${data[i].name.common}`);
+                        var option = document.createElement("option");
+                        option.text = data[i].name.common;
+                        select.appendChild(option);
+                    }
+                })
+
+            }
+
+            function handleSelect() {
+                var country = document.getElementById("country").value;
+                console.log("Selected Country: " + country);
+            }
+            
+            window.onload = fetchCountries
+        </script>
+    </head>
+
+    <body> 
+        <h2>Select Country</h2>
+
+        <select id="country" onchange="handleSelect()"> 
+            <option value="">Select Country</option>
+        </select>
+    </body>     
+</html>

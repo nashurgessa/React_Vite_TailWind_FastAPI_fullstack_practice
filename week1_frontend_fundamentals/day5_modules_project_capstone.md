@@ -16,10 +16,10 @@ By the end of this session, you should be able to:
 
 Continue the **same repo** from Day 4 — do not create a new project folder.
 
-| Terminal | Folder | Command |
-|----------|--------|---------|
-| 1 | `backend/` | `uvicorn main:app --reload` |
-| 2 | `frontend/` | `npm run watch` (CSS + TypeScript) |
+| Terminal | Folder        | Command                              |
+| -------- | ------------- | ------------------------------------ |
+| 1        | `backend/`  | `uvicorn main:app --reload`        |
+| 2        | `frontend/` | `npm run watch` (CSS + TypeScript) |
 
 Open `frontend/index.html` in the browser.
 
@@ -27,16 +27,16 @@ Open `frontend/index.html` in the browser.
 
 ## Week 1 recap
 
-| Day | Skill | What you built |
-|-----|-------|----------------|
-| 1 | JavaScript ES6+ | Hotel data and functions |
-| 2 | TypeScript | `Hotel`, `Booking` interfaces |
-| 3 | DOM + Tailwind | Search UI, cards, booking modal |
-| 4 | `fetch` + FastAPI preview | `frontend/` + `backend/`, GET/POST API |
-| **5 (today)** | ES modules + `localStorage` | Typed, modular frontend capstone |
+| Day                 | Skill                        | What you built                             |
+| ------------------- | ---------------------------- | ------------------------------------------ |
+| 1                   | JavaScript ES6+              | Hotel data and functions                   |
+| 2                   | TypeScript                   | `Hotel`, `Booking` interfaces          |
+| 3                   | DOM + Tailwind               | Search UI, cards, booking modal            |
+| 4                   | `fetch` + FastAPI preview  | `frontend/` + `backend/`, GET/POST API |
+| **5 (today)** | ES modules +`localStorage` | Typed, modular frontend capstone           |
 
-**Today:** Refactor `frontend/app.js` into `frontend/src/` modules.  
-**Backend:** Keep Day 4 `main.py` as-is (print-only bookings). Week 3 expands it.  
+**Today:** Refactor `frontend/app.js` into `frontend/src/` modules.
+**Backend:** Keep Day 4 `main.py` as-is (print-only bookings). Week 3 expands it.
 **Next week:** New **React + Vite** app inside the same `hotel-booking-app/` folder.
 
 ---
@@ -418,7 +418,7 @@ Add a history container in `index.html` under the search card:
 
 ---
 
-# Part 3 — localStorage 
+# Part 3 — localStorage
 
 ## Step 11: Generic storage — `src/utils/storage.ts`
 
@@ -693,12 +693,12 @@ __pycache__/
 
 # Summary: Week 1 complete
 
-| Layer | Location | Status |
-|-------|----------|--------|
-| UI | `frontend/` | Tailwind + DOM + TypeScript modules |
-| API client | `frontend/src/services/hotelService.ts` | `fetch` to FastAPI |
-| API server | `backend/main.py` | Demo only — Week 3 goes deeper |
-| Persistence | `localStorage` | Favorites, history, drafts |
+| Layer       | Location                                  | Status                              |
+| ----------- | ----------------------------------------- | ----------------------------------- |
+| UI          | `frontend/`                             | Tailwind + DOM + TypeScript modules |
+| API client  | `frontend/src/services/hotelService.ts` | `fetch` to FastAPI                |
+| API server  | `backend/main.py`                       | Demo only — Week 3 goes deeper     |
+| Persistence | `localStorage`                          | Favorites, history, drafts          |
 
 **Week 1 milestone:** `hotel-booking-app/` — full-stack folder layout, working frontend + preview backend.
 
